@@ -13,7 +13,7 @@ namespace pryRepaso
             int ValorRegistradoCodigo = Convert.ToInt32(txtCodigo.Text);
             string ValorRegistradoNombre = txtNombre.Text;
 
-            MessageBox.Show("Codigo:" + ValorRegistradoCodigo + "Nombre " + ValorRegistradoNombre);
+            MessageBox.Show("Codigo: " + ValorRegistradoCodigo + " Nombre: " + ValorRegistradoNombre);
 
         }
 
