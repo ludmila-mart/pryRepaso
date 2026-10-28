@@ -13,18 +13,17 @@ namespace pryRepaso
         string[] VectorPlanA = new string[4];
         string[] VectorPlanB = new string[3];
         string[] VectorPlanC = new string[3];
+        private int indiceGrabar;
 
         public frmGrupo()
         {
             InitializeComponent();
         }
 
+
         private void label1_Click(object sender, EventArgs e)
         {
-            cboGrupo.Items.Add("Plan A");
-            cboGrupo.Items.Add("Plan B");
-            cboGrupo.Items.Add("Plan C");
-            cboGrupo.DropDownStyle = ComboBoxStyle.DropDownList;
+
 
             VectorPlanA[0] = "CPU";
             VectorPlanA[1] = "Micro";
@@ -99,7 +98,38 @@ namespace pryRepaso
 
         private void frmGrupo_Load(object sender, EventArgs e)
         {
+            cboGrupo.Items.Add("Plan A");
+            cboGrupo.Items.Add("Plan B");
+            cboGrupo.Items.Add("Plan C");
+            cboGrupo.DropDownStyle = ComboBoxStyle.DropDownList;
 
+
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            switch (cboGrup.Text)
+            {
+                case "Plan A":
+                    VectorPlanA[indiceGrabar] = txtDato.Text;
+                    indiceGrabar++;
+                    break;
+
+                default: break;
+
+
+            }
         }
     }
 }
