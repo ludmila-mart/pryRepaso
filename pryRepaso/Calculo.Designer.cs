@@ -61,7 +61,7 @@
             btnCalculo.TabIndex = 2;
             btnCalculo.Text = "Calculo";
             btnCalculo.UseVisualStyleBackColor = true;
-            btnCalculo.Click += btnCalculo_Click;
+            //btnCalculo.Click += btnCalculo_Click;
             // 
             // txtMonto
             // 

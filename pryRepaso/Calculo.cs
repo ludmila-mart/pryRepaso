@@ -10,14 +10,23 @@ namespace pryRepaso
 {
     public partial class Calculo : Form
     {
+
+
         public Calculo()
         {
             InitializeComponent();
         }
 
-        private void btnCalculo_Click(object sender, EventArgs e)
+        private void btnCalculo_Click(object sender, EventArgs e, float IVA)
         {
-            float
+            float monto;
+            monto = float.Parse(txtMonto.Text);
+            //float IVA;
+            //IVA = (cboIva.SelectedItem.ToString().Replace("%", "");
+            float resultado;
+            resultado = monto * IVA;
+            //lblresultado.Text = "resultado= $ " + resultado;
+
         }
 
         private void txtMonto_TextChanged(object sender, EventArgs e)
